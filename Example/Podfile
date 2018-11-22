@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'KDObjectKit_Example' do
+  pod 'KDObjectKit', :path => '../'
+
+  target 'KDObjectKit_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end

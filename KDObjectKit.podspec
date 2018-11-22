@@ -21,14 +21,14 @@ Pod::Spec.new do |s|
 TODO: Add long description of the pod here.
                        DESC
 
-  s.homepage         = 'https://github.com/kevinmenglu/KDObjectKit'
+  s.homepage         = 'https://github.com/kevinmenglu/KDObjectcUIKit'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'kevinmenglu' => 'menglu.xu@kidoroo.com' }
-  s.source           = { :git => 'https://github.com/kevinmenglu/KDObjectKit.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/kevinmenglu/KDObjectcUIKit.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.ios.deployment_target = '8.0'
+  s.ios.deployment_target = '9.0'
 
   s.source_files = 'KDObjectKit/Classes/**/*'
   
@@ -37,6 +37,6 @@ TODO: Add long description of the pod here.
   # }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+   s.frameworks = 'UIKit', 'Foundation'
+   s.dependency 'Masonry', '~> 1.1.0' 
 end

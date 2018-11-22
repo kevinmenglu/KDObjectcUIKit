@@ -63,9 +63,9 @@
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		882E925CA9D6E362E757E36C /* Pods-KDObjectKit_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KDObjectKit_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KDObjectKit_Example/Pods-KDObjectKit_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		8AA6C3F471A95C0FD5FF7707 /* Pods-KDObjectKit_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KDObjectKit_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-KDObjectKit_Example/Pods-KDObjectKit_Example.release.xcconfig"; sourceTree = "<group>"; };
-		A8712C27F779050DD0313D79 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
-		B5BB87B16CFD62F711E496CC /* KDObjectKit.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = KDObjectKit.podspec; path = ../KDObjectKit.podspec; sourceTree = "<group>"; };
-		CC56DEBCF613F78F75792C95 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		A8712C27F779050DD0313D79 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		B5BB87B16CFD62F711E496CC /* KDObjectKit.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = KDObjectKit.podspec; path = ../KDObjectKit.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		CC56DEBCF613F78F75792C95 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		EC160C40A68BEBDEC6A49201 /* Pods-KDObjectKit_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KDObjectKit_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-KDObjectKit_Tests/Pods-KDObjectKit_Tests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -247,6 +247,9 @@
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = kevinmenglu;
 				TargetAttributes = {
+					6003F589195388D20070C39A = {
+						DevelopmentTeam = DZ492PWQVG;
+					};
 					6003F5AD195388D20070C39A = {
 						TestTargetID = 6003F589195388D20070C39A;
 					};
@@ -326,12 +329,14 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-KDObjectKit_Example/Pods-KDObjectKit_Example-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/KDObjectKit/KDObjectKit.framework",
+				"${BUILT_PRODUCTS_DIR}/Masonry/Masonry.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/KDObjectKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Masonry.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -497,9 +502,11 @@
 			baseConfigurationReference = 882E925CA9D6E362E757E36C /* Pods-KDObjectKit_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = DZ492PWQVG;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "KDObjectKit/KDObjectKit-Prefix.pch";
 				INFOPLIST_FILE = "KDObjectKit/KDObjectKit-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -512,9 +519,11 @@
 			baseConfigurationReference = 8AA6C3F471A95C0FD5FF7707 /* Pods-KDObjectKit_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = DZ492PWQVG;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "KDObjectKit/KDObjectKit-Prefix.pch";
 				INFOPLIST_FILE = "KDObjectKit/KDObjectKit-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";

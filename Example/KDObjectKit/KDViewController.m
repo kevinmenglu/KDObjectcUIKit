@@ -7,7 +7,7 @@
 //
 
 #import "KDViewController.h"
-
+#import "KDNoDataView.h"
 @interface KDViewController ()
 
 @end
@@ -17,7 +17,10 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+    KDNoDataView *view = [KDNoDataView noDataView:CGRectMake(100, 200, 200, 200) withContent:@"sdjafla;" WithTouchBlock:^{
+        
+    }];
+    [self.view addSubview:view];
 }
 
 - (void)didReceiveMemoryWarning

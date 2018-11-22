@@ -1,0 +1,23 @@
+PODS:
+  - KDObjectKit (0.1.0):
+    - Masonry (~> 1.1.0)
+  - Masonry (1.1.0)
+
+DEPENDENCIES:
+  - KDObjectKit (from `../`)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Masonry
+
+EXTERNAL SOURCES:
+  KDObjectKit:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  KDObjectKit: 33af5bd85fa087a770e1b30ca46027a37e55cb3d
+  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+
+PODFILE CHECKSUM: b5201ac7d20af91c94dd42942c9d673473d1ad61
+
+COCOAPODS: 1.5.3

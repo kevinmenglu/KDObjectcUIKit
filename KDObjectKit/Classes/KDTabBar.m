@@ -8,6 +8,10 @@
 
 #import "KDTabBar.h"
 #import "KDTabBarButton.h"
+#import "KDConmmonDefine.h"
+#import "UIView+Sizes.h"
+#import "UIColor+HexColor.h"
+#import "UIFont+Custom.h"
 
 #define KDBADGE_HEIGHT  18.0
 @interface KDTabBar()

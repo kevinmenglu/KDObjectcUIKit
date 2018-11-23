@@ -6,7 +6,7 @@
 //
 
 #import "UIFont+Custom.h"
-
+#import "KDConmmonDefine.h"
 @implementation UIFont (Custom)
 
 #pragma mark - Font Method

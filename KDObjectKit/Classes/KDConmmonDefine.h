@@ -10,9 +10,8 @@
 
 #define KDGetImage(img)             [UIImage imageNamed:img]
 
-#define KD
 //screen width & height
-#define KDScreenWidth [UIScreen mainScreen].bounds.size.width
+#define KDScreenWidth  [UIScreen mainScreen].bounds.size.width
 #define KDScreenHeight [UIScreen mainScreen].bounds.size.height
 #define KDRelativeIphone6WidthRatio (MIN(KDScreenWidth,KDScreenHeight) / 375.0)
 #define KDRelativeIphone6HeightRatio (MAX(KDScreenHeight,KDScreenWidth) / 667.0)
@@ -27,7 +26,7 @@
 /**
  * 空字符串判断
  */
-#define NULLString(string) ((string == nil) || ([string isKindOfClass:[NSNull class]]) || (![string isKindOfClass:[NSString class]])||[string isEqualToString:@""] || [string isEqualToString:@"<null>"] || [string isEqualToString:@"(null)"] || [[string stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceCharacterSet]] length]== 0 )
+#define NULLString(string)  ((string == nil) || ([string isKindOfClass:[NSNull class]]) || (![string isKindOfClass:[NSString class]])||[string isEqualToString:@""] || [string isEqualToString:@"<null>"] || [string isEqualToString:@"(null)"] || [[string stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceCharacterSet]] length]== 0 )
 
 #define KDColor(r,g,b)              [UIColor colorWithRed:r/255.0 green:g/255.0 blue:b/255.0 alpha:1]
 #define KDColorWithAlpha(r,g,b,a)   [UIColor colorWithRed:r/255.0 green:g/255.0 blue:b/255.0 alpha:a]

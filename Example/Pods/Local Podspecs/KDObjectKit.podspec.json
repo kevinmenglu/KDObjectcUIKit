@@ -1,9 +1,9 @@
 {
   "name": "KDObjectKit",
-  "version": "0.1.0",
+  "version": "0.1.2",
   "summary": "A short description of KDObjectKit.",
   "description": "TODO: Add long description of the pod here.",
-  "homepage": "https://github.com/kevinmenglu/KDObjectKit",
+  "homepage": "https://github.com/kevinmenglu/KDObjectcUIKit",
   "license": {
     "type": "MIT",
     "file": "LICENSE"
@@ -12,14 +12,13 @@
     "kevinmenglu": "menglu.xu@kidoroo.com"
   },
   "source": {
-    "git": "https://github.com/kevinmenglu/KDObjectKit.git",
-    "tag": "0.1.0"
+    "git": "https://github.com/kevinmenglu/KDObjectcUIKit.git",
+    "tag": "0.1.2"
   },
   "platforms": {
     "ios": "9.0"
   },
-  "source_files": "KDObjectKit/Classes/**/*",
-  "public_header_files": "Pod/Classes/**/*.h",
+  "source_files": "KDObjectKit/Classes/**/*.{h,m}",
   "frameworks": [
     "UIKit",
     "Foundation"

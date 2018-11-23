@@ -1,5 +1,5 @@
 PODS:
-  - KDObjectKit (0.1.0):
+  - KDObjectKit (0.1.2):
     - Masonry (~> 1.1.0)
   - Masonry (1.1.0)
 
@@ -15,7 +15,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  KDObjectKit: 33af5bd85fa087a770e1b30ca46027a37e55cb3d
+  KDObjectKit: b7af27a2c72cf7c4e7939dc8cb8568ed0a8d8488
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
 
 PODFILE CHECKSUM: b5201ac7d20af91c94dd42942c9d673473d1ad61
